@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxif Support - How Can We Help?</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- LOADING FONTS AND ICONS -->
+    <link rel="stylesheet" type="text/css" href="rev/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" type="text/css" href="rev/fonts/font-awesome/css/font-awesome.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="rev/css/rs6.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Animation CSS -->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Simplebar CSS -->
+    <link rel="stylesheet" href="css/simplebar.min.css">
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animations.min.css">
+    <!-- Magnefic Popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <!-- Icons CSS -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/themify-icons/themify-icons.css">
+    <!--  Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--  Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        background-color: #f8f9fa;
+        color: #212529;
+    }
+
+    /* Navigation Bar Styling */
+    .primary-navigation-container {
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .language-selector-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+    }
+
+    .country-flag-icon {
+        width: 24px;
+        height: 18px;
+    }
+
+    .language-code-text {
+        font-size: 0.95rem;
+        color: #495057;
+    }
+
+    .primary-action-button {
+        background-color: #1a1a1a;
+        color: white;
+        padding: 0.65rem 1.5rem;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+    }
+
+    .primary-action-button:hover {
+        background-color: #333;
+    }
+
+    .hamburger-menu-icon {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu-line {
+        width: 25px;
+        height: 3px;
+        background-color: #1a1a1a;
+        border-radius: 2px;
+    }
+
+    /* Hero Section */
+    .hero-section-container {
+        text-align: center;
+        padding: 10rem 2rem 3rem;
+    }
+
+    .main-heading-title {
+        font-size: 2.75rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 2rem;
+    }
+
+    .search-input-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .support-search-input {
+        width: 100%;
+        padding: 1rem 1rem 1rem 3rem;
+        border: 1px solid #dee2e6;
+        border-radius: 30px;
+        font-size: 1rem;
+        background-color: white;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .support-search-input:focus {
+        outline: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-icon-element {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6c757d;
+    }
+
+    /* Category Cards */
+    .category-cards-grid {
+        max-width: 1200px;
+        margin: -2rem auto 4rem;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .support-category-card {
+        background-color: white;
+        padding: 2.5rem;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .support-category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .category-title-text {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a1a1a;
+    }
+
+    /* Earn Money Section */
+    .earn-money-section-wrapper {
+        max-width: 1200px;
+        margin: 0 auto 4rem;
+        padding: 0 2rem;
+    }
+
+    .section-main-heading {
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 2rem;
+    }
+
+    .topic-filter-tabs-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .filter-tab-button {
+        padding: 0.65rem 1.5rem;
+        border-radius: 25px;
+        border: 1px solid #dee2e6;
+        background-color: white;
+        color: #495057;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 0.95rem;
+    }
+
+    .filter-tab-button.active-filter-tab {
+        background-color: #1a1a1a;
+        color: white;
+        border-color: #1a1a1a;
+    }
+
+    .filter-tab-button:hover {
+        border-color: #1a1a1a;
+    }
+
+    .content-showcase-flex-layout {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        background-color: white;
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .driver-image-container {
+        flex: 1;
+    }
+
+    .driver-promotional-image {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .information-content-block {
+        flex: 1;
+    }
+
+    .subsection-title-heading {
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 2rem;
+    }
+
+    .feature-list-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .feature-item-wrapper {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .checkmark-icon-circle {
+        width: 24px;
+        height: 24px;
+        background-color: #28a745;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-top: 0.25rem;
+    }
+
+    .checkmark-symbol {
+        color: white;
+        font-size: 0.85rem;
+        font-weight: 700;
+    }
+
+    .feature-text-content {
+        flex: 1;
+    }
+
+    .feature-heading-text {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature-description-text {
+        font-size: 0.95rem;
+        color: #6c757d;
+        line-height: 1.6;
+    }
+
+    .learn-more-link-button {
+        display: inline-block;
+        margin-top: 2rem;
+        color: #1a1a1a;
+        text-decoration: underline;
+        font-weight: 500;
+    }
+
+    /* Download App Section */
+    .app-download-promotional-section {
+        background-color: #fabe12;
+        padding: 2rem 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .app-promo-content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .download-text-content-block {
+        flex: 1;
+        color: white;
+    }
+
+    .app-tagline-heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        line-height: 1.3;
+        color: #ffff;
+    }
+
+    .app-availability-text {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        opacity: 0.95;
+    }
+
+    .download-app-cta-button {
+        display: inline-block;
+        background-color: white;
+        color: #fabe12;
+        padding: 0.85rem 2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .download-app-cta-button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .phone-mockup-visual-container {
+        flex: 1;
+        text-align: center;
+    }
+
+    .smartphone-screenshot-image {
+        max-width: 350px;
+        height: auto;
+        filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+    }
+
+    /* Footer */
+    .main-footer-container {
+        background-color: white;
+        border-top: 1px solid #dee2e6;
+        padding: 3rem 2rem 2rem;
+    }
+
+    .footer-content-grid-layout {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer-column-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-column-heading {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        margin-bottom: 1.25rem;
+    }
+
+    .footer-link-item {
+        color: #6c757d;
+        text-decoration: none;
+        margin-bottom: 0.75rem;
+        transition: color 0.3s ease;
+    }
+
+    .footer-link-item:hover {
+        color: #1a1a1a;
+    }
+
+    .social-media-links-bar {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 2rem;
+        border-top: 1px solid #dee2e6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-icons-flex-group {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .social-media-icon-link {
+        width: 40px;
+        height: 40px;
+        background-color: #f8f9fa;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #495057;
+        transition: all 0.3s ease;
+    }
+
+    .social-media-icon-link:hover {
+        background-color: #1a1a1a;
+        color: white;
+    }
+
+    .copyright-legal-text {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .hamburger-menu-icon {
+            display: flex;
+        }
+
+        .navigation-actions-group {
+            gap: 1rem;
+        }
+
+        .main-heading-title {
+            font-size: 2rem;
+        }
+
+        .content-showcase-flex-layout {
+            flex-direction: column;
+        }
+
+        .app-promo-content-wrapper {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .social-media-links-bar {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .category-cards-grid {
+            margin-top: 2rem;
+        }
+    }
+</style>
+</head>
+
+<body>
+    <div class="page-container" dir="ltr" id="pageContainer">
+        <button class="close-btn">✕</button>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <a href="driver.html" class="sidebar-item">
+                <span class="icon"><i class="fas fa-user-tie"></i></span>
+                <div class="sidebar-text">
+                    <div class="sidebar-title">Become a Driver</div>
+                    <div class="sidebar-subtitle">Earn more</div>
+                </div>
+                <span class="arrow" dir="ltr">‹</span>
+            </a>
+
+            <a href="food-courier.html" class="sidebar-item">
+                <span class="icon"><i class="fas fa-motorcycle"></i></span>
+                <div class="sidebar-text">
+                    <div class="sidebar-title">Become a Courier</div>
+                    <div class="sidebar-subtitle">Deliver food and get paid weekly</div>
+                </div>
+                <span class="arrow" dir="ltr">‹</span>
+            </a>
+
+            <a href="food-merchant.html" class="sidebar-item">
+                <span class="icon"><i class="fas fa-store"></i></span>
+                <div class="sidebar-text">
+                    <div class="sidebar-title">Add a Restaurant or Store</div>
+                    <div class="sidebar-subtitle">Reach more customers and grow revenue</div>
+                </div>
+                <span class="arrow" dir="ltr">‹</span>
+            </a>
+
+            <a href="fleet.html" class="sidebar-item">
+                <span class="icon"><i class="fas fa-layer-group"></i></span>
+                <div class="sidebar-text">
+                    <div class="sidebar-title">Register as a Fleet Owner</div>
+                    <div class="sidebar-subtitle">Add your fleet and increase your income</div>
+                </div>
+                <span class="arrow" dir="ltr">‹</span>
+            </a>
+
+            <a href="business.html" class="sidebar-item">
+                <span class="icon"><i class="fas fa-briefcase"></i></span>
+                <div class="sidebar-text">
+                    <div class="sidebar-title">Taxif Business</div>
+                    <div class="sidebar-subtitle">Taxif products and services for your business</div>
+                </div>
+                <span class="arrow" dir="ltr">‹</span>
+            </a>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <nav class="navbarss">
+                <button class="nav-btn active" data-section="products">Products</button>
+                <button class="nav-btn" data-section="earn">Earn with Taxif</button>
+                <button class="nav-btn" data-section="company">Company</button>
+                <button class="nav-btn" data-section="safety">Safety</button>
+                <button class="nav-btn" data-section="support">Support</button>
+                <button class="nav-btn" data-section="cities">Cities</button>
+            </nav>
+
+            <div class="content-area">
+                <!-- Products -->
+                <div class="content-section active" id="products">
+                    <div class="content-row">
+                        <div class="content-column">
+                            <h3>Rides</h3>
+                            <a href="rides.html">Rides</a>
+                            <a href="safety.html">Passenger Safety</a>
+                            <a href="drive.html">Become a Driver</a>
+                            <a href="chauffeur.html">Private Driver</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Scooters</h3>
+                            <a href="safety.html">Scooters</a>
+                            <a href="scooters-safety.html">Scooter Safety</a>
+                            <a href="scooters-report.html">Report an Issue</a>
+                            <a href="scooters-safety-lab.html">Safety Lab</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Taxif Market</h3>
+                            <a href="food-market.html">Taxif Market</a>
+                            <a href="#">Become a Courier</a>
+                            <a href="food-merchant.html">Add a Restaurant or Store</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Taxif Food</h3>
+                            <a href="food.html">Taxif Food</a>
+                            <a href="#">Become a Courier</a>
+                            <a href="food-merchant.html">Add a Restaurant or Store</a>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="content-column">
+                            <h3>Taxif Drive</h3>
+                            <a href="drive.html">Taxif Drive</a>
+                            <a href="drive.html#faq">FAQ</a>
+                            <a href="drive-report.html">Report a Car</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Taxif Business</h3>
+                            <a href="business.html">Taxif Business</a>
+                            <a href="business-benefits.html">Benefits</a>
+                            <a href="business-work-profile.html">Business Profile</a>
+                            <a href="business-products.html">Products</a>
+                            <a href="business-food.html">Taxif Food for Business</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>E-bikes</h3>
+                            <a href="ebikes.html">E-bikes</a>
+                            <a href="scooters-safety-lab.html">Safety Lab</a>
+                            <a href="scooters-report.html">Report an Issue</a>
+                            <a href="scooters.html#faq">FAQ</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Taxif Plus</h3>
+                            <a href="plus.html">Taxif Plus</a>
+                            <a href="plus.html#benefits">Benefits</a>
+                            <a href="plus.html#how-to-join">How to Join</a>
+                            <a href="plus.html#faq">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Earn -->
+                <div class="content-section" id="earn">
+                    <div class="content-row">
+                        <div class="content-column">
+                            <h3>Drivers</h3>
+                            <a href="driver.html">Sign up as a Driver</a>
+                            <a href="driver.html#How-to-work">How it Works</a>
+                            <a href="driver.html#faq">FAQ</a>
+                            <a href="driver-safety.htm">Driver Safety</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Couriers</h3>
+                            <a href="#">Become a Courier</a>
+                            <a href="food-courier.html#how-to-work">How it Works</a>
+                            <a href="food-courier.html#faq">FAQ</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Taxif Food Stores</h3>
+                            <a href="food-merchant.html">Add a Restaurant or Store</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Fleets</h3>
+                            <a href="food-merchant.html">Register as a Fleet Owner</a>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="content-column">
+                            <h3>Franchise</h3>
+                            <a href="franchise.html">Taxif Franchise</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div class="content-section" id="company">
+                    <div class="content-row">
+                        <div class="content-column">
+                            <h3>About</h3>
+                            <a href="careers-life-at-taxif.html">About Us</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Investors</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Responsibility</h3>
+                            <a href="#">Sustainability</a>
+                            <a href="#">Social Impact</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety -->
+                <div class="content-section" id="safety">
+                    <div class="content-row">
+                        <div class="content-column">
+                            <h3>Safety</h3>
+                            <a href="#">Safety Center</a>
+                            <a href="#">Report an Issue</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>Security</h3>
+                            <a href="#">Data Protection</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div class="content-section" id="support">
+                    <div class="content-row">
+                        <div class="content-column">
+                            <h3>Support</h3>
+                            <a href="Support.html">Help Center</a>
+                            <a href="Support.html">Contact Us</a>
+                        </div>
+
+                        <div class="content-column">
+                            <h3>For Drivers</h3>
+                            <a href="Support.html">Driver Support</a>
+                            <a href="Support.html">Payments</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cities -->
+                <div class="content-section" id="cities">
+                    <div class="content-row">
+                        <div class="content-column">
+                            <h3>Cities</h3>
+                            <a href="#">Cities</a>
+                            <a href="#">Airports</a>
+                            <a href="cities-solutions.html">City solutions</a>
+                            <a href="cities-charging-docks.html">Taxif Charging Docks</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Loading -->
+    <div id="pq-loading">
+        <div id="pq-loading-center">
+            <img src="images/Logo-black.svg" alt="loading">
+        </div>
+    </div>
+    <!-- Loading -->
+
+    <div class="pq-background-overlay"></div>
+    
+    <div class="pq-sidebar">
+        <div class="pq-close-btn">
+            <a class="pq-close" href="javascript:void(0)">
+                <i class="ion-android-close"></i>
+            </a>
+        </div>
+        <div class="pq-sidebar-block mCustomScrollbar" data-simplebar>
+            <div class="pq-sidebar-header">
+                <img src="images/Logo-black.svg" class="pq-sidebar-logo" alt="qodify-sidebar-logo">
+            </div>
+            <div class="pq-sidebar-content">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard.</p>
+            </div>
+            <div class="pq-sidebars">
+                <div class="pq-widget-menu widget">
+                    <h4 class="footer-title">Recent Posts</h4>
+                    <div class="pq-footer-recent-post">
+                        <div class="pq-footer-recent-post-media">
+                            <a href="#">
+                                <img src="images/recent-posts/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pq-footer-recent-post-info">
+                            <h6>
+                                <a href="#">Yourself Everyone Else
+                                    Is Already Marketing Taken</a>
+                            </h6>
+                            <a href="https://qodify.peacefulqode.com/2023/07/04/" class="pq-post-date">
+                                <i class="far fa-calendar-alt"></i>July <span>7</span>, 2023
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pq-footer-recent-post">
+                        <div class="pq-footer-recent-post-media">
+                            <a href="#">
+                                <img src="images/recent-posts/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pq-footer-recent-post-info">
+                            <h6>
+                                <a href="#">Tech Conference Make
+                                    Your Workforce A Security</a>
+                            </h6>
+                            <a href="#" class="pq-post-date">
+                                <i class="far fa-calendar-alt"></i>July <span>7</span>, 2023
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pq-footer-recent-post">
+                        <div class="pq-footer-recent-post-media">
+                            <a href="#">
+                                <img src="images/recent-posts/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="pq-footer-recent-post-info">
+                            <h6>
+                                <a href="#">You Must Try 20 Secret
+                                    Of Digital Web Transform</a>
+                            </h6>
+                            <a href="#" class="pq-post-date">
+                                <i class="far fa-calendar-alt"></i>July <span>7</span>, 2023
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pq-sidebar-contact">
+                <ul class="pq-contact">
+                    <li>
+                        <i class="fa fa-map-marker"></i>
+                        <span>Themeforest, Envato HQ</span>
+                    </li>
+                    <li>
+                        <a href="tel:+1800001658">
+                            <i class="fas fa-phone"></i>
+                            <span>+1800-001-658</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@peacefulqode.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@peacefulqode.com</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pq-sidebar-social">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <header id="pq-header" class="pq-header-style-2 pq-has-sticky ">
+        <div class="pq-top-header ">
+            <div class="container-fluid">
+                <div class="row flex-row-reverse">
+                    <div class="col-md-6 text-right">
+                        <div class="pq-header-social text-right">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pq-header-contact">
+                            <ul>
+                                <li>
+                                    <a href="tel:+1800001658">
+                                        <i class="fas fa-phone"></i>
+                                        <span>+1800-001-658</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@peacefulqode.com">
+                                        <i class="fas fa-envelope"></i>
+                                        <span>info@peacefulqode.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pq-bottom-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html">
+                                <img class="img-fluid logo" src="images/Logo-black.svg" alt="qodify">
+                            </a>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div id="pq-menu-contain" class="pq-menu-contain">
+                                    <ul id="pq-main-menu" class="navbar-nav ml-auto">
+                                        <li class="menu-item">
+                                            <a href="rides.html">Rides</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="scooters.html"> Scooters</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="ebikes.html">E-Bikes</a>
+                                        </li>
+
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="#">About</a>
+                                            <i class="fa fa-chevron-down pq-submenu-icon"></i>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="careers-life-at-taxif.html">About Us</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="cities-solutions.html">Sustainability</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="press.html">Press</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="press-guidelines.html">Brand Guidelines</a>
+                                                </li>
+                                                <li class="menu-item menu-item-has-children">
+                                                    <a href="blog.html">Blog</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="careers-life-at-taxif.html">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pq-header-info-box">
+                                <div class="pq-btn-container">
+                                    <div class="pq-button-block">
+                                        <a href="careers-life-at-taxif.html" id="openSidebar" class="pq-button pq-button-flat">
+                                            <span class="pq-button-text">Register</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="navbar-togglers sidebar-btn" type="button">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </nav>
+                        <div class="sidebar sidebars">
+                            <a href="driver.html" class="sidebar-item">
+                                <span class="icon"><i class="fas fa-user-tie"></i></span>
+                                <div class="sidebar-text">
+                                    <div class="sidebar-title">Become a Driver</div>
+                                    <div class="sidebar-subtitle">Earn more</div>
+                                </div>
+                                <span class="arrow" dir="ltr">‹</span>
+                            </a>
+
+                            <a href="food-courier.html" class="sidebar-item">
+                                <span class="icon"><i class="fas fa-motorcycle"></i></span>
+                                <div class="sidebar-text">
+                                    <div class="sidebar-title">Become a Courier</div>
+                                    <div class="sidebar-subtitle">Deliver food and get paid weekly</div>
+                                </div>
+                                <span class="arrow" dir="ltr">‹</span>
+                            </a>
+
+                            <a href="food-merchant.html" class="sidebar-item">
+                                <span class="icon"><i class="fas fa-store"></i></span>
+                                <div class="sidebar-text">
+                                    <div class="sidebar-title">Add a Restaurant or Store</div>
+                                    <div class="sidebar-subtitle">Reach more customers and grow revenue</div>
+                                </div>
+                                <span class="arrow" dir="ltr">‹</span>
+                            </a>
+
+                            <a href="fleet.html" class="sidebar-item">
+                                <span class="icon"><i class="fas fa-layer-group"></i></span>
+                                <div class="sidebar-text">
+                                    <div class="sidebar-title">Register as a Fleet Owner</div>
+                                    <div class="sidebar-subtitle">Add your fleet and increase your income</div>
+                                </div>
+                                <span class="arrow" dir="ltr">‹</span>
+                            </a>
+
+                            <a href="business.html" class="sidebar-item">
+                                <span class="icon"><i class="fas fa-briefcase"></i></span>
+                                <div class="sidebar-text">
+                                    <div class="sidebar-title">Taxif Business</div>
+                                    <div class="sidebar-subtitle">Taxif products and services for your business</div>
+                                </div>
+                                <span class="arrow" dir="ltr">‹</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <section class="hero-section-container">
+        <h1 class="main-heading-title">How can we help?</h1>
+
+        <div class="search-input-wrapper">
+            <svg class="search-icon-element" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2" />
+                <path d="M14 14L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <input type="text" class="support-search-input" placeholder="Search for help">
+        </div>
+    </section>
+
+    <div class="category-cards-grid">
+        <div class="support-category-card">
+            <h3 class="category-title-text">Passengers</h3>
+        </div>
+
+        <div class="support-category-card">
+            <h3 class="category-title-text">Privacy</h3>
+        </div>
+    </div>
+
+    <section class="earn-money-section-wrapper">
+        <h2 class="section-main-heading">Earn Money with Taxif</h2>
+
+        <div class="topic-filter-tabs-container">
+            <button class="filter-tab-button active-filter-tab">Drivers</button>
+            <button class="filter-tab-button">Couriers</button>
+            <button class="filter-tab-button">Scooter Fleet Managers</button>
+            <button class="filter-tab-button">Scooter Chargers</button>
+        </div>
+
+        <div class="content-showcase-flex-layout">
+            <div class="driver-image-container">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
+                    alt="Happy Taxif Driver" class="driver-promotional-image">
+            </div>
+
+            <div class="information-content-block">
+                <h3 class="subsection-title-heading">Drive, Lead, and Earn Extra Money</h3>
+
+                <div class="feature-list-container">
+                    <div class="feature-item-wrapper">
+                        <div class="checkmark-icon-circle">
+                            <span class="checkmark-symbol">✓</span>
+                        </div>
+                        <div class="feature-text-content">
+                            <h4 class="feature-heading-text">More Rides and Higher Earnings</h4>
+                            <p class="feature-description-text">You will be able to complete +500 million rides per year
+                                thanks to our network of riders. High demand means more earning opportunities.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item-wrapper">
+                        <div class="checkmark-icon-circle">
+                            <span class="checkmark-symbol">✓</span>
+                        </div>
+                        <div class="feature-text-content">
+                            <h4 class="feature-heading-text">Set Your Own Schedule</h4>
+                            <p class="feature-description-text">You won't find another job where you can manage your
+                                time the way you want. You can choose to work during peak hours or at convenient times
+                                for you.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item-wrapper">
+                        <div class="checkmark-icon-circle">
+                            <span class="checkmark-symbol">✓</span>
+                        </div>
+                        <div class="feature-text-content">
+                            <h4 class="feature-heading-text">Easy Connection Anytime, Anywhere</h4>
+                            <p class="feature-description-text">You can start or end trips anytime using your
+                                smartphone. We make earning money easier with advanced technology.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="learn-more-link-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-download-promotional-section">
+        <div class="app-promo-content-wrapper">
+            <div class="download-text-content-block">
+                <h2 class="app-tagline-heading">Order on time, arrive in minutes.</h2>
+                <p class="app-availability-text">Available for iOS & Android for download now.</p>
+                <a href="#" class="download-app-cta-button">Download the App</a>
+            </div>
+
+            <div class="phone-mockup-visual-container">
+                <svg class="smartphone-screenshot-image" width="280" height="560" viewBox="0 0 280 560" fill="none">
+                    <rect x="10" y="10" width="260" height="540" rx="30" fill="#1a1a1a" />
+                    <rect x="20" y="50" width="240" height="480" rx="10" fill="white" />
+                    <circle cx="140" cy="30" r="5" fill="#333" />
+                    <rect x="110" y="25" width="60" height="10" rx="5" fill="#333" />
+
+                    <!-- Map illustration -->
+                    <rect x="30" y="70" width="220" height="280" rx="8" fill="#e9ecef" />
+                    <circle cx="140" cy="210" r="8" fill="#fabe12" />
+
+                    <!-- Ride options -->
+                    <rect x="35" y="370" width="210" height="50" rx="8" fill="#f8f9fa" />
+                    <rect x="50" y="385" width="80" height="20" rx="4" fill="#dee2e6" />
+
+                    <rect x="35" y="430" width="210" height="50" rx="8" fill="#f8f9fa" />
+                    <rect x="50" y="445" width="80" height="20" rx="4" fill="#dee2e6" />
+
+                    <rect x="35" y="490" width="210" height="25" rx="12" fill="#fabe12" />
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-area">
+        <div class="footer-widget">
+            <div class="container">
+                <div class="row footer-widget-wrapper pt-120 pb-70">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="footer-widget-box about-us">
+                            <a href="#" class="footer-logo">
+                                <img src="images/logos/footer-logo.png" alt="">
+                            </a>
+                            <p class="mb-3">
+                                With TaxiF you get not only professional service, but also joyful emotions that you take with you all day long. Order and enjoy your trips with us
+                            </p>
+                            <ul class="footer-contact">
+                                <li><a href="tel:+447723437010"><i class="far ti-headphone"></i>+44 7723 437010</a></li>
+                                <li><i class="far ti-map-alt"></i>25/B Milford Road, New York</li>
+                                <li><a href="mailto:"><i class="far fa-envelope"></i><span class="__cf_email__">[email&#160;protected]</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Products</h4>
+                            <ul class="footer-list">
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Rides</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Scooters</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> E-Bikes</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Taxif Drive</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i> Taxif Food</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Taxif Market</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Earn</h4>
+                            <ul class="footer-list">
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Taxif Drivers</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Taxif Couriers</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Taxif Food Merchants</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Taxif Fleets</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Taxif Franchise</a></li>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Company</h4>
+                            <ul class="footer-list">
+                                <li><a href="#"><i class="fas fa-caret-right"></i>About Taxif</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Sustainability</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Blog</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Careers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="footer-widget-box list">
+                            <h4 class="footer-widget-title">Safety</h4>
+                            <ul class="footer-list">
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Rider safety</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Driver safety</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Scooter safety</a></li>
+                                <li><a href="#"><i class="fas fa-caret-right"></i>Safety lab</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center">
+                        <p class="copyright-text">
+                            &copy; Copyright <span id="date"></span> <a href="#"> Taxif </a> All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 align-self-center">
+                        <ul class="footer-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Search functionality
+        const supportSearchInput = document.querySelector('.support-search-input');
+        supportSearchInput.addEventListener('input', (e) => {
+            console.log('Searching for:', e.target.value);
+        });
+
+        // Filter tabs functionality
+        const filterTabButtons = document.querySelectorAll('.filter-tab-button');
+        filterTabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterTabButtons.forEach(btn => btn.classList.remove('active-filter-tab'));
+                button.classList.add('active-filter-tab');
+                console.log('Filter changed to:', button.textContent);
+            });
+        });
+
+        // Hamburger menu
+        const hamburgerMenuIcon = document.querySelector('.hamburger-menu-icon');
+        hamburgerMenuIcon.addEventListener('click', () => {
+            console.log('Menu toggled');
+            // Add mobile menu functionality here
+        });
+
+        // Category cards click
+        const supportCategoryCards = document.querySelectorAll('.support-category-card');
+        supportCategoryCards.forEach(card => {
+            card.addEventListener('click', () => {
+                console.log('Category clicked:', card.querySelector('.category-title-text').textContent);
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!--jquery js-->
+    <script src="js/jquery.min.js"></script>
+    <!--bootstrap js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--owl-carousal-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--progress-bar js-->
+    <script src="js/progressbar.js"></script>
+    <!--isotope js-->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!--countTo js-->
+    <script src="js/simplebar.min.js"></script>
+    <script src="js/jquery.countTo.min.js"></script>
+    <!--Maginfic-Popup js-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Animation JS -->
+    <script src="js/wow.min.js"></script>
+    <!-- Rev-Slider -->
+    <script src="rev/js/rbtools.min.js"></script>
+    <script src="rev/js/rs6.min.js"></script>
+    <script src="js/rev-custom.js"></script>
+    <!-- Swiper js -->
+    <script src="js/swiper.js"></script>
+    <!--custom js-->
+    <script src="js/custom.js"></script>
+</body>
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }, { 'ap': 'cpbh-mt' }, { 'server': 'sg2plmcpnl492384' }, { 'dcenter': 'sg2' }, { 'cp_id': '9858662' }, { 'cp_cache': '' }, { 'cp_cl': '8' }) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script>
+<script src='https://img1.wsimg.com/traffic-assets/js/tccl.min.js'></script>
+</html>
