@@ -400,8 +400,26 @@ Loading
 }
 
 #pq-loading img {
-	height: 60px;
+    height: 60px;
+    animation: logoFade 1.4s ease-in-out infinite;
 }
+
+@keyframes logoFade {
+    0% {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+}
+
+
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++
 Back to Top
