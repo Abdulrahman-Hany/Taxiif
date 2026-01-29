@@ -633,7 +633,6 @@ sidebarItems.forEach(item => {
 const contentLinks = document.querySelectorAll('.content-column a');
 contentLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault();
         this.style.backgroundColor = '#f0fdf7';
         setTimeout(() => {
             this.style.backgroundColor = 'transparent';
@@ -699,4 +698,5 @@ closeBtn.addEventListener("click", () => {
   document.addEventListener("click", function () {
     sidebar.classList.remove("active");
   });
+
 
